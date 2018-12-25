@@ -1,9 +1,4 @@
 <?php
-
-#$mcast = array (
-#    "navn"  => array("a" => "orange", "b" => "banana", "c" => "apple"),"ip" => array(1, 2, 3, 4, 5, 6));
-#
-
 $html = implode('', file('http://192.168.1.43/YamahaExtendedControl/v1/main/getStatus'));
 $section = file_get_contents($html, FALSE, NULL, 20, 14);
 $rest = substr($html, 28, 2);
